@@ -7,13 +7,15 @@ import {
   incrementAction,
   resetAction,
 } from "./reducer/actions/counterAction";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
-  const [counter, dispatch] = useReducer(counterReducer, counterInitialState);
-
+  // const [counter, dispatch] = useReducer(counterReducer, counterInitialState);
+  const counter = useSelector((state) => state);
+  const dispatch = useDispatch();
   return (
     <>
-      <h1>Counter With Reducer</h1>
+      <h1>Counter With Redux</h1>
       <div className="card">
         <div className="mb-3 text-3xl font-medium">{counter.count}</div>
         <button onClick={() => dispatch(incrementAction())}>+</button>
