@@ -1,5 +1,6 @@
 import "./App.css";
 import CounterApp from "./components/CounterApp";
+import ShoppingCart from "./components/ShoppingCart";
 import ThemeToggle from "./components/ThemeToggle";
 import TodoList from "./components/TodoList";
 
@@ -9,6 +10,7 @@ function App() {
       <CounterApp />
       <TodoList />
       <ThemeToggle />
+      <ShoppingCart />
     </>
   );
 }

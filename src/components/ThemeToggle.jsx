@@ -18,7 +18,8 @@ function ThemeToggle() {
   if (!mounted) return null;
 
   return (
-    <div className="space-y-4">
+    <div className="mt-5 space-y-4">
+      <h1 className="text-2xl font-bold">Chế độ Dark/Light</h1>
       <div className="flex flex-col items-center space-y-4">
         <div className={`flex items-center justify-center space-x-2`}>
           <button
